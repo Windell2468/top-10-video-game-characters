@@ -1,0 +1,12 @@
+body {
+  background-color: #cceeff;
+}
+
+.card {
+  background-color: #1e3a8a;
+  color: white;
+}
+article {
+  max-width: 500px;
+  background-color: white;
+}
