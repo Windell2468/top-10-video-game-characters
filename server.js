@@ -1,16 +1,18 @@
+// Import Express and character data
 import express from 'express'; 
 import characters from './data/characters.js';
 
-
+// Create Express application
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+// Serve static files such as images and CSS
 app.use(express.static('public'))
 
-
+// Homepage route
 app.get('/', (req, res) => {
     res.sendFile('./index.html', { root: './public' });
 });
+// Character detail routes
 app.get('/characters/mario', (req, res) => {
   const mario = characters[0];
   res.send(`
@@ -141,7 +143,7 @@ app.get('/characters/sonic', (req, res) => {
     <a href="/">Back to Home</a>
   `)
 })
-
+// Custom 404 page for invalid routes
 app.use((req, res) => {
   res.status(404).send(`
     <h1>404 - Not Found</h1>
@@ -150,7 +152,7 @@ app.use((req, res) => {
   `);
 })
 
-
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

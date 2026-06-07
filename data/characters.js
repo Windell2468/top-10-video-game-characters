@@ -1,3 +1,4 @@
+// Array containing information about my top 10 video game characters
 const characters = [
   {
     id: 1,
