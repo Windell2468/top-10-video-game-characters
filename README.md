@@ -1,10 +1,10 @@
-# WEB103 Project 1 - *Top 10 Video Game Characters*
+# WEB103 Project 2 - *Top 10 Video Game Characters Part 2*
 
 Submitted by: **Jerry Rogers Jr.**
 
-About this web app: **This web app displays my top 10 video game characters from different game series. On the homepage, users can view each character's image, role, and genre. Then, they can click a character to open a detailed page with the game series, power, role, genre, description, and image.**
+About this web app: **This web app displays my top 10 video game characters. It uses a Render PostgreSQL database to dynamically store and retrieve its information. Users can view a list of characters and see details such as game series, role, genre, and description.**
 
-Time spent: **9** hours
+Time spent: **8** hours
 
 ## Required Features
 
@@ -12,17 +12,14 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
@@ -30,14 +27,12 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-**Note: please be sure to 
-
 Here's a walkthrough of implemented required features:
 
-<img src='./Project 1 -Top 10 Video Game Characters.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./Project 2 -Top 10 Video Game Characters.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
+GIF created with ...  GIF tool here
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,8 +40,7 @@ GIF created with ...  Add GIF tool here
 
 ## Notes
 
-My challenges were working with Express routes, displaying images, and importing character data into the application. I also practiced using PicoCSS and creating card layouts to improve the homepage design and make the character list more visually appealing.
-
+One challenge was connecting the application to the Render PostgreSQL database and correctly configuring environment variables, which enabled the app to store and retrieve information dynamically. Another challenge was updating the character detail routes to retrieve information from the database rather than the original JavaScript data file, so the details would load from the new source. 
 
 ## License
 
